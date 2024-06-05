@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">SimpleDeliveryManagement</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_progress_order">ProgressOrderActivity</string>
+    <!-- Login -->
+    <string name="title_login">Manajemen Layanan Pesan-Antar</string>
+    <string name="title_description">Silahkan login menggunakan username dan password yang telah terdaftar!</string>
+    <string name="error_login_1">Login gagal! Username atau password salah!</string>
+    <string name="error_login_2">Username atau password tidak boleh kosong!</string>
+    <string name="login">Login</string>
+    <string name="placeholder_username">Username</string>
+    <string name="placeholder_password">Password</string>
+    <!-- List Order -->
+    <string name="title_list_order">Daftar Pesanan Belum Dikirim</string>
+    <string name="kirim">Kirim</string>
+    <!-- Process Order -->
+    <string name="dalam_proses">Dalam Proses</string>
+    <string name="dalam_pengiriman">Dalam Pengiriman</string>
+    <string name="selesai">Selesai</string>
+    <string name="rincian_pesanan">Rincian Pesanan</string>
+    <string name="nama_pemesan">Nama Pemesan</string>
+    <string name="telepon_pemesan">Nomor Telepon Pemesan</string>
+    <string name="alamat_pengiriman">Alamat Pengiriman</string>
+    <string name="Nominal_Uang_Tunai">Nominal Uang Tunai</string>
+    <string name="nama_pengirim">Nama Pengirim</string>
+    <string name="tunda_pengiriman">Tunda Pengiriman</string>
+    <string name="selesaikan_pengiriman">Selesaikan Pengiriman</string>
+    <!-- Stock Management -->
+    <string name="manajemen_stok">Manajemen Stok</string>
+    <string name="simpan_perubahan_stok">Simpan Perubahan Stok</string>
+    <!-- Order History -->
+    <string name="riwayat_pesanan">Riwayat Pesanan</string>
+</resources>
