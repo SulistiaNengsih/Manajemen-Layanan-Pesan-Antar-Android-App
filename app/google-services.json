@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "271250625709",
+    "project_id": "pushnotification-d3c4c",
+    "storage_bucket": "pushnotification-d3c4c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271250625709:android:97ef8e412bc22cdb526224",
+        "android_client_info": {
+          "package_name": "com.example.simpledeliverymanagement"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDV1geZng-1ZZ9os_ItKHzgA0iSgkCT1X8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -12,22 +12,22 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/baseline_moped_24"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/baseline_moped_24"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SimpleDeliveryManagement"
+        android:theme="@style/Theme.App.Starting"
         android:networkSecurityConfig="@xml/network_security_config"
         tools:targetApi="31">
         <activity
             android:name=".activities.ProcessOrderActivity"
             android:exported="false"
-            android:label="@string/title_activity_progress_order"
+            android:label="Detail Pesanan"
             android:theme="@style/Theme.SimpleDeliveryManagement" />
         <activity
             android:name=".activities.LoginActivity"
             android:exported="true"
-            android:label="@string/title_activity_login"
+            android:label="Login"
             android:theme="@style/Theme.SimpleDeliveryManagement">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,13 +36,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.ListOrderActivity"
+            android:name=".activities.ToBeDeliveredOrderActivity"
             android:exported="true"
-            android:label="ListOrderActivity"
+            android:label="Daftar Pesanan"
             android:theme="@style/Theme.SimpleDeliveryManagement" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAk3L-mrPIoizugy1dkD-vHj1q2EjrwENs" />
+        <service
+            android:name=".network.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

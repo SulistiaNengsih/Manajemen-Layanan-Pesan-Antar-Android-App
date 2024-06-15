@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_to_be_delivered"
+        android:icon="@drawable/baseline_moped_24"
+        android:title="@string/nav_daftar_pesanan_belum_dikirim" />
+    <item
+        android:id="@+id/navigation_history"
+        android:icon="@drawable/baseline_history_24"
+        android:title="@string/nav_riwayat_pesanan" />
+</menu>

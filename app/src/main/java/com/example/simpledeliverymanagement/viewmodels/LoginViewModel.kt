@@ -8,7 +8,7 @@ import com.example.simpledeliverymanagement.repositories.LoginRepository
 
 class LoginViewModel : ViewModel() {
     private val loginRepository = LoginRepository()
-    private val _loginResult = MutableLiveData<LoginResponse>()
+    private val _loginResult = MutableLiveData<LoginResponse?>()
     val loginResult: LiveData<LoginResponse?> = _loginResult
 
     fun login(username: String, password: String) {

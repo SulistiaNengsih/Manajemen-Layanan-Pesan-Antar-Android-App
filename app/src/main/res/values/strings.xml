@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SimpleDeliveryManagement</string>
+    <string name="app_name">Manajemen Layanan Pesan Antar</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_progress_order">ProgressOrderActivity</string>
     <!-- Login -->
@@ -11,7 +11,7 @@
     <string name="placeholder_username">Username</string>
     <string name="placeholder_password">Password</string>
     <!-- List Order -->
-    <string name="title_list_order">Daftar Pesanan Belum Dikirim</string>
+    <string name="title_list_order">Belum Dikirim</string>
     <string name="kirim">Kirim</string>
     <!-- Process Order -->
     <string name="dalam_proses">Dalam Proses</string>
@@ -30,4 +30,14 @@
     <string name="simpan_perubahan_stok">Simpan Perubahan Stok</string>
     <!-- Order History -->
     <string name="riwayat_pesanan">Riwayat Pesanan</string>
+    <string name="placeholder_total_pembayaran">Total pembayaran: 38000</string>
+    <string name="placeholder_phone_number">Phone Number</string>
+    <string name="place_holder_order_number">Pesanan {order_number}</string>
+    <string name="placeholder_customer_name">Alya Septiani</string>
+    <string name="placeholder_cust_address">Address</string>
+    <string name="nav_riwayat_pesanan">Riwayat Pesanan</string>
+    <string name="nav_daftar_pesanan_belum_dikirim">Daftar Pesanan Belum Dikirim</string>
+    <string name="lihat_detail_pesanan">Lihat Detail Pesanan</string>
+    <string name="_24_05_12">24/05/12</string>
+    <string name="default_notification_channel_id">new_order</string>
 </resources>

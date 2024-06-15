@@ -3,85 +3,106 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="16dp"
     android:layout_marginTop="8dp"
     android:layout_marginBottom="8dp"
-    android:outlineAmbientShadowColor="@color/dark_grey"
-    android:background="@drawable/rounded_corner_card">
+    android:background="@drawable/rounded_corner_card"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/_24_05_12"
+        android:textColor="@color/dark_grey"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Belum Dikirim"
+        android:textColor="@color/dark_grey"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDate" />
 
     <TextView
         android:id="@+id/orderNumberTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Pesanan {order_number}"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        android:text="@string/place_holder_order_number"
         android:textColor="@color/black"
-        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvStatus"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tvDate" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/orderItemsRecyclerView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@+id/orderNumberTextView"
+        android:padding="0dp"
         app:layout_constraintBottom_toBottomOf="@+id/customerNameTextView"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:padding="0dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/orderNumberTextView" />
 
     <TextView
         android:id="@+id/customerNameTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Alya Septiani"
+        android:text="@string/placeholder_customer_name"
         android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@+id/orderItemsRecyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/orderItemsRecyclerView" />
 
     <TextView
         android:id="@+id/phoneNumberTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Phone Number"
-        android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@+id/orderItemsRecyclerView"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:text="@string/placeholder_phone_number"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderItemsRecyclerView" />
 
     <TextView
         android:id="@+id/addressTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Address"
-        android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@+id/customerNameTextView"
+        android:text="@string/placeholder_cust_address"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/customerNameTextView" />
 
     <TextView
         android:id="@+id/totalTv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Total pembayaran: 38000"
+        android:text="@string/placeholder_total_pembayaran"
         android:textColor="@color/green"
-        android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@+id/addressTextView"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/seeDetailBtn"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/sendButton"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@+id/addressTextView" />
 
     <Button
-        android:id="@+id/sendButton"
+        android:id="@+id/seeDetailBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Kirim"
-        android:textColor="@color/black"
         android:background="@drawable/rounded_corner_button"
-        app:layout_constraintTop_toBottomOf="@+id/addressTextView"
-        app:layout_constraintStart_toEndOf="@+id/totalTv"
+        android:text="Lihat Detail"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/totalTv"
+        app:layout_constraintTop_toBottomOf="@+id/addressTextView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

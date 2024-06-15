@@ -5,7 +5,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitInstance {
-    private const val BASE_URL = "https://1229-182-1-82-239.ngrok-free.app"
+    private const val BASE_URL = "https://eb10-36-85-65-205.ngrok-free.app"
     private const val MAP_BASE_URL = "https://maps.googleapis.com/"
 
     private val client = OkHttpClient.Builder()

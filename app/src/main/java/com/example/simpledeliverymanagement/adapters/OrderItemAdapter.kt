@@ -29,7 +29,7 @@ class OrderItemAdapter(private val orders: List<OrderItemsItem?>?) :
     override fun onBindViewHolder(holder: OrderProductsViewHolder, position: Int) {
         val product = orders?.get(position)
         holder.productAmountAndName.text = product?.product?.productName
-        holder.productTotalPrice.text = product?.subtotal?.toString()
+        holder.productTotalPrice.text = product?.formattedSubtotal
     }
 
     override fun getItemCount(): Int = orders!!.size

@@ -15,6 +15,16 @@ data class GetOrderResponse(
 ) : Parcelable
 
 @Parcelize
+data class GetOrderByIdResponse(
+
+	@field:SerializedName("data")
+	val data: DataItem? = null,
+
+	@field:SerializedName("info")
+	val info: String? = null
+) : Parcelable
+
+@Parcelize
 data class Product(
 
 	@field:SerializedName("product_desc")
@@ -38,6 +48,9 @@ data class Product(
 	@field:SerializedName("unit_price")
 	val unitPrice: Int? = null,
 
+	@field:SerializedName("formatted_unit_price")
+	val formattedUnitPrice: String? = null,
+
 	@field:SerializedName("product_name")
 	val productName: String? = null
 ) : Parcelable
@@ -50,6 +63,9 @@ data class DataItem(
 
 	@field:SerializedName("cash_amount")
 	val cashAmount: Int? = null,
+
+	@field:SerializedName("formatted_cash_amount")
+	val formattedCashAmount: String? = null,
 
 	@field:SerializedName("cancel_remark")
 	val cancelRemark: String? = null,
@@ -71,6 +87,9 @@ data class DataItem(
 
 	@field:SerializedName("total_payment")
 	val totalPayment: Int? = null,
+
+	@field:SerializedName("formatted_total_payment")
+	val formattedTotalPayment: String? = null,
 
 	@field:SerializedName("order_status")
 	val orderStatus: String? = null,
@@ -113,7 +132,7 @@ data class DataItem(
 data class OrderDelivery(
 
 	@field:SerializedName("courier_latitude")
-	val courierLatitude: Int? = null,
+	val courierLatitude: String? = null,
 
 	@field:SerializedName("delivery_address")
 	val deliveryAddress: String? = null,
@@ -128,7 +147,7 @@ data class OrderDelivery(
 	val createdAt: String? = null,
 
 	@field:SerializedName("courier_longitude")
-	val courierLongitude: Int? = null,
+	val courierLongitude: String? = null,
 
 	@field:SerializedName("id")
 	val id: Int? = null,
@@ -140,10 +159,13 @@ data class OrderDelivery(
 	val orderId: Int? = null,
 
 	@field:SerializedName("delivery_latitude")
-	val deliveryLatitude: Int? = null,
+	val deliveryLatitude: String? = null,
 
 	@field:SerializedName("delivery_longitude")
-	val deliveryLongitude: Int? = null
+	val deliveryLongitude: String? = null,
+
+	@field:SerializedName("deliverylatlng")
+	val deliverylatlng: String? = null
 ) : Parcelable
 
 @Parcelize
@@ -157,6 +179,9 @@ data class OrderItemsItem(
 
 	@field:SerializedName("subtotal")
 	val subtotal: Int? = null,
+
+	@field:SerializedName("formatted_subtotal")
+	val formattedSubtotal: String? = null,
 
 	@field:SerializedName("product_id")
 	val productId: Int? = null,
@@ -172,6 +197,9 @@ data class OrderItemsItem(
 
 	@field:SerializedName("unit_price")
 	val unitPrice: Int? = null,
+
+	@field:SerializedName("formatted_unit_price")
+	val formattedUnitPrice: String? = null,
 
 	@field:SerializedName("order_id")
 	val orderId: Int? = null

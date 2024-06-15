@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/filter_all"
+        android:title="Semua" />
+    <item
+        android:id="@+id/filter_to_be_shipped"
+        android:title="Belum Dikirim" />
+    <item
+        android:id="@+id/filter_on_delivery"
+        android:title="Dalam Pengiriman" />
+    <item
+        android:id="@+id/filter_received"
+        android:title="Diterima" />
+    <item
+        android:id="@+id/filter_delayed"
+        android:title="Tertunda" />
+    <item
+        android:id="@+id/filter_canceled"
+        android:title="Dibatalkan" />
+</menu>

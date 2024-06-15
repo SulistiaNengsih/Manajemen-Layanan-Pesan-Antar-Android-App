@@ -19,6 +19,8 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+
+        buildConfigField("String", "MAPS_API_KEY", "\"${project.property("MAPS_API_KEY")}\"")
     }
 
     buildTypes {
@@ -39,6 +41,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.2"
@@ -54,7 +57,6 @@ android {
 }
 
 dependencies {
-
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.12.0")
@@ -81,4 +83,9 @@ dependencies {
     implementation ("com.google.android.gms:play-services-maps:18.0.2")
     implementation ("com.google.maps.android:android-maps-utils:2.3.0")
     implementation ("com.google.android.gms:play-services-location:21.0.1")
+    implementation ("com.google.firebase:firebase-messaging-ktx:23.1.2")
+    implementation(platform("com.google.firebase:firebase-bom:33.1.0"))
+    implementation("androidx.core:core-splashscreen:1.0.1")
 }
+
+apply(plugin = "com.google.gms.google-services")
